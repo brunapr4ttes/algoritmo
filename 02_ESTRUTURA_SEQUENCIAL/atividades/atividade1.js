@@ -1,5 +1,3 @@
-alert("Arquivo atividade 1")
-
 let título, duração, horas, minutos
 
 título = prompt("Qual será o filme? ")
