@@ -7,7 +7,7 @@ anoNascimento = prompt("Digite o ano em que nasceu: ")
 anoAtual = prompt("Digite o ano atual: ")
 
 // 3º Casting nas variáveis que possuem valor numérico
-anoNascimento = parseInt(anoNascimento)
+anoNascimento = parseInt(anoNascimento) //parseInt -> vem antes de dar prompt, para tranformar em inteiro
 anoAtual = Number(anoAtual)
 
 // 4º Processar as variáveis que possuem valor
