@@ -7,7 +7,7 @@ if(valorsaque%10 != 0){
     location.reload()
 }
 
-notacem = valorsaque / 100
+notacem = Math.floor(resto / 100)
 resto = valorsaque % 100
 
 notacinq = Math.floor(resto / 50)
@@ -16,12 +16,12 @@ resto = resto % 50
 notadez = Math.floor(resto / 10)
 resto = resto % 10 
 
-if(){
-    document.write(`Notas de R$100 ${notacem}`)
-}else if(){
-    document.write(`Notas de R$50 ${notacinq}`)
-}else if(){
-    document.write(`Notas de R$10 ${notadez}`)
+if(notacem > 0){
+    document.write(`Receba ${notacem} cédulas de R$100`)
+}if(notacinq > 0){
+    document.write(`Receba ${notacinq} cédulas de R$50`)
+}if(notadez > 0){
+    document.write(`Receba ${notadez} cédulas de R$10`)
 }
     //alert(`Notas 100 ${notacem} - Resto ${resto}`)
 
