@@ -1,10 +1,10 @@
-let canditado1 = 0, canditado2 = 0, canditado3 = 0, canditado4 = 0, voto, sair, branco = 0,  nulo = 0, soma = 0
+let candidato1 = 0, candidato2 = 0, candidato3 = 0, candidato4 = 0, voto, sair, branco = 0,  nulo = 0, soma = 0
         alert("Digite 0 para saiar do loop: ")
         
         do{
             voto = Number(prompt("Em que candidato você irá votar: "))
             if(voto === 0){
-                sair = confirm("Deseja parar? ")
+                sair = confirm("Votos finalizados? ")
                 if(sair){
                     break
                 }else{
@@ -14,19 +14,19 @@ let canditado1 = 0, canditado2 = 0, canditado3 = 0, canditado4 = 0, voto, sair, 
 
             if(voto === 1){
 
-                canditado1++
+                candidato1++
 
             }else if(voto === 2){
 
-                canditado2++
+                candidato2++
 
             }else if(voto === 3){
 
-                canditado3++
+                candidato3++
 
             }else if(voto === 4){
 
-                canditado4++
+                candidato4++
 
             }else if(voto === 5){
 
@@ -37,12 +37,12 @@ let canditado1 = 0, canditado2 = 0, canditado3 = 0, canditado4 = 0, voto, sair, 
                 nulo++
 
             }
-            soma = canditado1 + canditado2 + canditado3 + canditado4 
+            soma = candidato1 + candidato2 + candidato3 + candidatoo4 
         }while(true)
         
-        document.write("<br> Votos do candidato 1 :"+canditado1)
-        document.write("<br> Votos do candidato 2 :"+canditado2)
-        document.write("<br> Votos do candidato 3 :"+canditado3)
-        document.write("<br> Votos do candidato 4 :"+canditado4)
+        document.write("<br> Votos do candidato 1 :"+candidato1)
+        document.write("<br> Votos do candidato 2 :"+candidato2)
+        document.write("<br> Votos do candidato 3 :"+candidato3)
+        document.write("<br> Votos do candidato 4 :"+candidato4)
         document.write("<br> Votos brancos :"+branco)
         document.write("<br> Soma dos votos:"+soma)
