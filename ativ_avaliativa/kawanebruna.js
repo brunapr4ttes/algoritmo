@@ -34,8 +34,8 @@ salario = salariofixo + aumentosalario
         }else if (sexo === 2) {
             document.write(`Sexo masculino <br> <br>`)
         }
+        folhapagamento = folhapagamento + salario
     }
-folhapagamento = folhapagamento + salario
 document.write(`Folha de pagamento = ${folhapagamento}`)
 if (isNaN(folhapagamento)) {
     alert(`Dados Inválidos, por favor, insira dados válidos!`)
