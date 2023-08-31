@@ -1,8 +1,10 @@
-let numero
+let numero, resultado, quantos
 
-numero = Number(prompt(`Digite um número e veja a tabuada: `))
+        numero = Number(prompt("Digite o número para saber sua tabuada"))
+        quantos = Number(prompt("Digite até quanto você quer"))
+        
+        for(let i = 0; i<=quantos; i++){
+            resultado = numero * i
+            document.write(`${resultado} // \n`)
 
-for(let tab = 1; tab <= 10; tab++){
- let resultado = numero * tab 
- document.write(numero+" x "+tab+" = "+resultado+"<br>") 
-}
+        }

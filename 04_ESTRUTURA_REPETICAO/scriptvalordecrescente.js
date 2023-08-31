@@ -1,9 +1,11 @@
-let num, decre
+let numero
 
-num = Number(prompt(`Digite um número: `))
+        numero = Number(prompt("Insira um número:"))
 
-for(let i = num; i > 0; i--){
-    decre = i
-
-document.write(`<br> ${i}`)
-}
+        if(numero <= 0){
+            alert("Digite um valor acima de 1")
+            location.reload()
+        }
+        for(let i = 1; numero >= i; numero--){
+            document.write(` ${numero}\n//`)
+        }
